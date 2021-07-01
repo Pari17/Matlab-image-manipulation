@@ -32,7 +32,7 @@ edge(X);
 imshow(X);
 axis image;
 title('RGB Lena (grayscale)');
-edge(X); %6
+edge(X); 
 
 % 5
 Y = imsharpen(A); 
