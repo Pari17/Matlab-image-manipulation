@@ -11,14 +11,14 @@ image(B);
 axis image;
 title('RGB Lena (Gaussian smoothed)');
 
-% 3
+% 2
 h = [1 2 4; 4 1 0; 0 1 2]; % Using kernel 
 K = imfilter(A,h);
 image(K); 
 axis image;
 title('RGB Lena (imfilter)');
 
-%4
+% 3
 h = [1 1 1; 0 1 0; 0 1 2]; % Using kernel
 
 K = imfilter(A,h);
@@ -26,15 +26,15 @@ image(K);
 axis image;
 title('RGB Lena (imfilter)');
 
-%5
+% 4
 X = rgb2gray(A);
 edge(X);
 imshow(X);
 axis image;
 title('RGB Lena (grayscale)');
-edge(X); %6
+edge(X); 
 
-%7
+% 5
 Y = imsharpen(A); 
 imshow(Y);
 title('RGB Lena (Sharpened)');
